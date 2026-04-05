@@ -12,8 +12,11 @@ using PinkLoftBooking.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Render, Fly.io и др. задают переменную PORT — слушаем все интерфейсы.
+// В облаке задают PORT; в Docker без PORT — стандартный 8080 (образ aspnet).
 var portEnv = Environment.GetEnvironmentVariable("PORT");
+if (string.IsNullOrEmpty(portEnv) &&
+    string.Equals(Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER"), "true", StringComparison.OrdinalIgnoreCase))
+    portEnv = "8080";
 if (!string.IsNullOrEmpty(portEnv))
     builder.WebHost.UseUrls($"http://0.0.0.0:{portEnv}");
 
