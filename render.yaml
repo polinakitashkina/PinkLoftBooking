@@ -1,0 +1,10 @@
+# Опционально: Render подхватит при подключении Blueprint
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: pink-loft-booking
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /

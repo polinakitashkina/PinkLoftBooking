@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Розовый лофт — бронирование зон</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="blobs" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <header class="site-header">
+    <a href="#" class="logo">розовый<span>лофт</span></a>
+    <nav class="nav">
+      <a href="#zones">зоны</a>
+      <a href="#account">вход</a>
+      <a href="#booking">бронь</a>
+      <a href="#vibe">о месте</a>
+    </nav>
+    <a class="btn btn-small" href="#booking">забронировать</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-tag">пространство для девчачьих планов ✦</p>
+      <h1>Твоё место для красоты,<br />контента и уюта</h1>
+      <p class="hero-lead">
+        Лофт с характером: неон, платья напрокат, кольцевой свет, йога под спокойный свет,
+        кухня для сладких вечеринок и котики по расписанию. Выбирай зону и приходи с подругами —
+        всё можно забронировать заранее.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#account">войти или зарегистрироваться</a>
+        <a class="btn btn-ghost" href="#zones">наши зоны</a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>6</strong> тематических зон</li>
+        <li><strong>по слотам</strong> и на вечер</li>
+        <li><strong>тихий двор</strong> · уют и свет</li>
+      </ul>
+    </section>
+
+    <section id="vibe" class="section vibe">
+      <h2 class="section-title">какой тут вайб</h2>
+      <div class="vibe-grid">
+        <article class="vibe-card">
+          <span class="vibe-icon">✨</span>
+          <h3>свет и неон</h3>
+          <p>Розовый неон, кольцевой свет и лампы для макияжа — кадры получаются мягкие и «живые».</p>
+        </article>
+        <article class="vibe-card">
+          <span class="vibe-icon">🎀</span>
+          <h3>всё продумано</h3>
+          <p>От плечиков для платьев до чая после йоги — приезжай, не таскай тяжёлое из дома.</p>
+        </article>
+        <article class="vibe-card">
+          <span class="vibe-icon">💗</span>
+          <h3>только ваше время</h3>
+          <p>Бронь по часам: в выбранной зоне в этот момент только ты и твоя компания.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="zones" class="section zones">
+      <h2 class="section-title">основные ресурсы для бронирования</h2>
+      <p class="section-sub">Каждая зона со своим настроением — читай описание и выбирай то, что откликается.</p>
+
+      <div class="table-wrap" role="region" aria-label="Таблица зон">
+        <table class="resource-table">
+          <thead>
+            <tr>
+              <th scope="col">Ресурс</th>
+              <th scope="col">Описание</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="res-name"><span class="emoji">💄</span> Бьюти-зона «Сияй»</td>
+              <td>Профессиональный световой стол с LED-лампами, розовый неон, удобное кресло-крыло и подставка для телефона. Идеально для макияжа, съёмок reels и подготовки к выходу. Внутри — бокс с одноразовыми кистями и салфетками.</td>
+            </tr>
+            <tr>
+              <td class="res-name"><span class="emoji">👗</span> Кладовка с платьями «Fairy Fit»</td>
+              <td>Вечерние платья, пышные юбки, кроп-топы и кардиганы с пайетками. Можно забронировать на вечер (до 23:00) или на выходные. При бронировании выдаётся фирменный розовый плечик для хранения. Дополнительно: примерочная с полным ростовым зеркалом.</td>
+            </tr>
+            <tr>
+              <td class="res-name"><span class="emoji">📸</span> Фотозона «Pink Light»</td>
+              <td>Кольцевой свет с регулировкой яркости и теплоты, штатив с пультом, розовый фон (выбирай: неон, гирлянды, цветы), зеркальный пол и несколько реквизитов: очки-сердечки, розовый телефон, ободок с ушками. Создана для рилс, фото и настроения.</td>
+            </tr>
+            <tr>
+              <td class="res-name"><span class="emoji">🧘‍♀️</span> Зал для йоги и пилатеса «Cocoon»</td>
+              <td>Тёплый розовый мат, блоки, ремни, болстеры и пледы. Включается спокойная музыка или звуки природы. Есть диммируемый свет и аромадиффузор с маслом розы или лаванды. В конце занятия — чай с мятой.</td>
+            </tr>
+            <tr>
+              <td class="res-name"><span class="emoji">🎂</span> Кухня для бейкинг-вечеринок «Sprinkle»</td>
+              <td>Просторный стол с розовой скатертью, духовка, миксер, формы для кексов в виде сердечек и звёзд. Есть холодильник для теста и крема. Можно арендовать на 2 или 4 часа. Бонус: розовый фартук и набор топпингов (блёстки, драже, посыпка).</td>
+            </tr>
+            <tr>
+              <td class="res-name"><span class="emoji">🐱</span> Зона с котокафе «Purr &amp; Relax»</td>
+              <td>Уютная комната с пуфиками, пледами и мягким розовым светом. Внутри живут 3–4 кошки (ласковые, привитые, с именами). Бронирование по часам (от 30 минут до 2 часов). Входит: чашка чая/какао, антисептик для рук и 10 минут обнимашек с котиком в подарок. Кошек нельзя кормить, будить или брать на руки без их согласия (этично 💗).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cards-mobile" aria-hidden="false">
+        <article class="zone-card">
+          <div class="zone-card-head"><span>💄</span> Бьюти-зона «Сияй»</div>
+          <p>Профессиональный световой стол с LED-лампами, розовый неон, удобное кресло-крыло и подставка для телефона. Идеально для макияжа, съёмок reels и подготовки к выходу. Внутри — бокс с одноразовыми кистями и салфетками.</p>
+        </article>
+        <article class="zone-card">
+          <div class="zone-card-head"><span>👗</span> Кладовка с платьями «Fairy Fit»</div>
+          <p>Вечерние платья, пышные юбки, кроп-топы и кардиганы с пайетками. Можно забронировать на вечер (до 23:00) или на выходные. При бронировании выдаётся фирменный розовый плечик для хранения. Дополнительно: примерочная с полным ростовым зеркалом.</p>
+        </article>
+        <article class="zone-card">
+          <div class="zone-card-head"><span>📸</span> Фотозона «Pink Light»</div>
+          <p>Кольцевой свет с регулировкой яркости и теплоты, штатив с пультом, розовый фон (выбирай: неон, гирлянды, цветы), зеркальный пол и несколько реквизитов: очки-сердечки, розовый телефон, ободок с ушками. Создана для рилс, фото и настроения.</p>
+        </article>
+        <article class="zone-card">
+          <div class="zone-card-head"><span>🧘‍♀️</span> Зал «Cocoon»</div>
+          <p>Тёплый розовый мат, блоки, ремни, болстеры и пледы. Включается спокойная музыка или звуки природы. Есть диммируемый свет и аромадиффузор с маслом розы или лаванды. В конце занятия — чай с мятой.</p>
+        </article>
+        <article class="zone-card">
+          <div class="zone-card-head"><span>🎂</span> Кухня «Sprinkle»</div>
+          <p>Просторный стол с розовой скатертью, духовка, миксер, формы для кексов в виде сердечек и звёзд. Есть холодильник для теста и крема. Можно арендовать на 2 или 4 часа. Бонус: розовый фартук и набор топпингов (блёстки, драже, посыпка).</p>
+        </article>
+        <article class="zone-card">
+          <div class="zone-card-head"><span>🐱</span> Котокафе «Purr &amp; Relax»</div>
+          <p>Уютная комната с пуфиками, пледами и мягким розовым светом. Внутри живут 3–4 кошки (ласковые, привитые, с именами). Бронирование по часам (от 30 минут до 2 часов). Входит: чашка чая/какао, антисептик для рук и 10 минут обнимашек с котиком в подарок. Кошек нельзя кормить, будить или брать на руки без их согласия (этично 💗).</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="account" class="section account">
+      <h2 class="section-title">аккаунт</h2>
+      <p class="section-sub">Зарегистрируйся или войди — так мы сохраним твои брони и покажем их ниже.</p>
+      <div class="account-inner">
+        <div id="api-flash" class="api-flash" role="status"></div>
+        <div class="account-status" id="account-status">Ты ещё не вошла 💌</div>
+        <div class="account-grid">
+          <div class="account-panel">
+            <h3>регистрация</h3>
+            <form id="form-register" class="booking-form" style="max-width: none; grid-template-columns: 1fr;">
+              <label class="field field-full">
+                <span>Email</span>
+                <input type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+              </label>
+              <label class="field field-full">
+                <span>Пароль (от 6 символов)</span>
+                <input type="password" name="password" required minlength="6" autocomplete="new-password" />
+              </label>
+              <button type="submit" class="btn btn-submit">создать аккаунт</button>
+            </form>
+          </div>
+          <div class="account-panel">
+            <h3>вход</h3>
+            <form id="form-login" class="booking-form" style="max-width: none; grid-template-columns: 1fr;">
+              <label class="field field-full">
+                <span>Email</span>
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+              <label class="field field-full">
+                <span>Пароль</span>
+                <input type="password" name="password" required autocomplete="current-password" />
+              </label>
+              <button type="submit" class="btn btn-submit">войти</button>
+            </form>
+          </div>
+        </div>
+        <button type="button" class="btn btn-ghost btn-submit" id="btn-logout" style="display: none;">выйти</button>
+      </div>
+    </section>
+
+    <section id="booking" class="section booking">
+      <div class="booking-inner">
+        <h2 class="section-title">забронировать слот</h2>
+        <p class="booking-text">
+          Выбери зону и удобное время. На одного гостя — не больше пяти активных броней на календарный день;
+          одну и ту же зону в одно время нельзя забронировать дважды — мы подскажем, если слот занят.
+        </p>
+        <form id="form-booking" class="booking-form">
+          <label class="field field-full">
+            <span>Зона</span>
+            <select id="booking-resource" name="resourceId" required>
+              <option value="">Загрузка…</option>
+            </select>
+          </label>
+          <label class="field field-full">
+            <span>Начало</span>
+            <input type="datetime-local" id="booking-start" required />
+          </label>
+          <label class="field field-full">
+            <span>Конец</span>
+            <input type="datetime-local" id="booking-end" required />
+          </label>
+          <button type="submit" class="btn btn-submit">создать бронь</button>
+        </form>
+        <p class="form-note">Сначала войди в аккаунт — после брони список «мои брони» обновится сам.</p>
+
+        <h3 class="section-title" style="margin-top: 2rem; font-size: 1.35rem;">мои брони</h3>
+        <ul class="bookings-list" id="bookings-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>розовый лофт · сделано с любовью к деталям</p>
+    <p class="footer-year">2026</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
