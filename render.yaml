@@ -1,10 +1,15 @@
-# Опционально: Render подхватит при подключении Blueprint
-# https://render.com/docs/blueprint-spec
+# Blueprint: https://render.com/docs/infrastructure-as-code
+# В Dashboard: New → Blueprint → выбери репозиторий PinkLoftBooking → Apply.
+# Jwt__SigningKey создаётся автоматически (не нужно вводить вручную).
 services:
   - type: web
     name: pink-loft-booking
     runtime: docker
+    branch: main
     dockerfilePath: ./Dockerfile
     dockerContext: .
     plan: free
     healthCheckPath: /
+    envVars:
+      - key: Jwt__SigningKey
+        generateValue: true
